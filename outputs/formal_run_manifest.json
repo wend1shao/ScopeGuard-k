@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "notes": [
+    "Only completed formal evaluation runs are packaged for GitHub.",
+    "Calibration, tuning, smoke-test, credit-limit, and network-blocked diagnostics remain in the local archive but are excluded from the release package.",
+    "The two Workspace ablation runs use the later k=5 supplement runs to replace incomplete k=5 conditions."
+  ],
+  "runs": [
+    {
+      "run_id": "20261023T172553Z_eval-full_approve_e7c5d7ee",
+      "suite": "workspace",
+      "policy": "full_approve",
+      "budgets": [0, 1, 2, 3, 5]
+    },
+    {
+      "run_id": "20261023T173416Z_final-eval-scopeguard_k_04f1278f",
+      "suite": "workspace",
+      "policy": "scopeguard_k",
+      "budgets": [0, 1, 2, 3, 5]
+    },
+    {
+      "run_id": "20261023T174400Z_final-eval-risk_intent_08650868",
+      "suite": "workspace",
+      "policy": "risk_intent",
+      "budgets": [0, 1, 2, 3, 5],
+      "note": "The incomplete k=5 condition is superseded by the registered supplement run."
+    },
+    {
+      "run_id": "20261023T174404Z_final-eval-risk_only_b4613582",
+      "suite": "workspace",
+      "policy": "risk_only",
+      "budgets": [0, 1, 2, 3, 5],
+      "note": "The incomplete k=5 condition is superseded by the registered supplement run."
+    },
+    {
+      "run_id": "20261026T065140Z_supplement-risk_intent-k5_26b5f74f",
+      "suite": "workspace",
+      "policy": "risk_intent",
+      "budgets": [5]
+    },
+    {
+      "run_id": "20261026T065307Z_supplement-risk_only-k5_a42bc310",
+      "suite": "workspace",
+      "policy": "risk_only",
+      "budgets": [5]
+    },
+    {
+      "run_id": "20261026T065431Z_final-eval-full_escalate_9db9e2d2",
+      "suite": "workspace",
+      "policy": "full_escalate",
+      "budgets": [0, 1, 2, 3, 5]
+    },
+    {
+      "run_id": "20261026T070540Z_banking-full_approve_e922ff76",
+      "suite": "banking",
+      "policy": "full_approve",
+      "budgets": [0, 1, 3]
+    },
+    {
+      "run_id": "20261026T070756Z_banking-full_escalate_632255a0",
+      "suite": "banking",
+      "policy": "full_escalate",
+      "budgets": [0, 1, 3]
+    },
+    {
+      "run_id": "20261026T071816Z_banking-scopeguard-final-network_7457e380",
+      "suite": "banking",
+      "policy": "scopeguard_k",
+      "budgets": [0, 1, 3]
+    }
+  ]
+}

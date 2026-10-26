@@ -1,0 +1,23 @@
+risk_only:
+  approve_max_risk: 0.25
+  deny_min_risk: 0.88
+
+risk_intent:
+  approve_min_alignment: 0.72
+  approve_max_risk: 0.78
+  deny_max_alignment: 0.28
+  deny_min_risk: 0.90
+
+scopeguard_k:
+  clear_approve_alignment: 0.80
+  clear_approve_max_risk: 0.82
+  explicit_high_risk_ceiling: 0.97
+  clear_deny_alignment: 0.22
+  clear_deny_risk: 0.82
+  base_escalation_value: 0.42
+  reserve_strength: 0.18
+  high_risk_floor: 0.62
+  residual_approve_alignment: 0.72
+  uncertainty_weight: 0.55
+  misalignment_weight: 0.30
+  risk_weight: 0.15
